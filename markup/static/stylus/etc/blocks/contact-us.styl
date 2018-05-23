@@ -1,0 +1,84 @@
+.contact-us__form
+  box-sizing border-box
+  width 50%
+  padding 30px 2%
+
+.contact-us__form-list
+  reset-list()
+  
+.contact-us__form-list-items
+  margin-bottom 10px
+  &:last-child
+    margin-bottom 0
+
+.contact-us__form-list-label
+  display block
+  
+  color: #212529;
+  font-weight 700
+  
+.contact-us__form-input
+  reset-input()
+  
+  padding: 10px 10px;
+  font-size 18px
+  line-height 21px
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  &:focus
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  &--textarea
+    height 240px
+    
+    resize none
+    
+.contact-us__map
+  width 50%
+  
+.contact-us__button
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  &:hover
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+  &:focus
+    box-shadow: 0 0 0 0.2rem rgba(23,162,184,.5);
+    
+@media(max-width 960px)
+  .contact-us
+    flex-direction column
+    
+  .contact-us__form
+    width auto
+    
+  .contact-us__map
+    width auto
+    height 360px
+    
+@media(max-width 470px)
+  .contact-us__form-input
+    &--textarea
+      height 90px
+      padding 10px

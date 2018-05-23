@@ -1,0 +1,116 @@
+.socials
+  &--footer,
+  &--blog
+    .socials__items
+      &--fb,
+      &--tw,
+      &--inst,
+      &--g
+        .facebook,
+        .twitter,
+        .instagram,
+        .googlePlus
+          fill grayLowLight
+  &--blog
+    .socials__items
+      display flex
+      justify-content center
+      align-items center
+      box-sizing border-box
+      width 49px
+      height 49px
+
+      border 2px solid #f6f6f6
+      border-radius 50%
+      &:hover
+        background-color #f6f6f6
+        .facebook,
+        .twitter,
+        .instagram
+          fill gray
+  &--blog-noBorder
+    .socials__items
+      width 20px
+      height 20px
+      
+      border none
+      .facebook,
+      .twitter,
+      .instagram
+        width 20px
+        height 20px
+      
+        fill #bebebf
+      &:hover
+        background-color transparent
+  &--about
+    .socials__items
+      &--fb,
+      &--tw,
+      &--inst,
+      &--g
+        .facebook,
+        .twitter,
+        .instagram,
+        .googlePlus
+          fill blueLowLight
+      &:hover
+        .facebook,
+        .twitter,
+        .instagram,
+        .googlePlus
+          fill blueLowLight
+        
+
+.socials__items
+  margin-right 15px
+  &:last-child
+    margin-right 0
+  &--fb
+    width 11px
+    height 30px
+    .facebook
+      width 8px
+      height 30px
+      
+      fill white
+  &--tw
+    width 18px
+    height 30px
+    .twitter
+      width 18px
+      height 30px
+      
+      fill white
+  &--inst
+    width 17px
+    height 30px
+    .instagram
+      width 17px
+      height 30px
+      
+      fill white
+  &--g
+    width 23px
+    height 18px
+    .googlePlus
+      width 23px
+      height 18px
+      
+      fill white
+  &--fb,
+  &--tw,
+  &--inst,
+  &--g
+    .facebook,
+    .twitter,
+    .instagram,
+    .googlePlus
+      transition 0.2s ease
+      &:hover
+        fill blueLight
+        
+@media(max-width 890px)
+  .socials
+    &--header
+      display none

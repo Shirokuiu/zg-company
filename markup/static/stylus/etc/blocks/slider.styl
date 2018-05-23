@@ -1,0 +1,97 @@
+.slider
+  position relative
+  z-index 10
+  
+.owl-carousel.owl-loaded
+  position relative
+  z-index 10
+  
+.owl-dots
+  position absolute
+  left: 0;
+  right: 0;
+  bottom: 40px;
+
+.owl-theme .owl-dots .owl-dot
+  &:active
+    outline none
+
+.owl-theme .owl-dots .owl-dot.active
+  outline none
+  span
+    background-color blueLight
+    
+.slider__slide-text-block
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  
+.slider__button
+  transition 0.2s ease
+  &:hover
+    background-color #1a2b40
+    
+.slider__slide-img
+  height 100vh
+  
+@media(min-width 2570px)
+  .slider__slide-img
+    height 50vh
+    
+@media(max-width 1300px)
+  .slider__slide
+    .container
+      box-sizing border-box
+      width 100%
+  
+  .owl-dots
+    bottom: 70px
+    
+@media(max-width 1070px)
+  .slider__headline
+    font-size 30px
+    line-height 33px
+    
+  .slider__title
+    margin-bottom 10px !important
+    
+    font-size 30px
+    line-height 33px
+    
+@media(max-width 1024px)
+  .slider__slide-img
+    height auto
+    
+@media(max-width 990px)
+  .owl-dots
+    bottom 30px
+    
+@media(max-width 768px)
+  .owl-dots
+    bottom 5px
+  
+  .slider__text
+    margin-bottom 20px !important
+  
+  .slider__button
+    padding-top 9px
+    padding-bottom 10px
+    
+  .owl-carousel .owl-item img
+    height 43vh
+    
+@media(max-width 500px)
+  .slider__headline
+    font-size 19px
+    line-height 22px
+    text-align center
+    
+  .slider__title
+    font-size 19px
+    line-height 22px
+    text-align center
+    
+  .slider__text
+    text-align center

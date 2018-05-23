@@ -1,0 +1,140 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../components/head/head.pug
+  head
+    +head(head.index)
+  body.page
+    |%=symbols=%
+
+    .wrapper
+      .preloader
+        .preloader__img-wrap
+          img.preloader__img(src="%=static=%img/content/logo.svg")
+      .content
+        header.page-header.page-header--home#rowTop
+          .page-header__row-top.page-header__row-top--home
+            .container.row
+              button.hamburger.hamburger--spin(type="button")
+                span.hamburger-box
+                  span.hamburger-inner
+              .logo
+                a.logo__text.text.text--fw700(href="index.html") ZG Investment
+                  span.m--l5 & Consulting Ltd
+              nav.main-nav.grow.row.row--ai-c
+                ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
+                  li.main-nav__items
+                    a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="index.html") Home
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="services.html") Services
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="about.html") About
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="contact-us.html") Contact us
+              .socials.socials--header.row.row--ai-c.m--l30
+                a.socials__items.socials__items--fb(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+                a.socials__items.socials__items--tw(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+                a.socials__items.socials__items--inst(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+          .slider.owl-carousel.owl-theme
+            .slider__slide
+              picture
+                source(media="(max-width: 1235px)" srcset="%=static=%img/content/slider-img1.jpg")
+                img.slider__slide-img(src="%=static=%img/content/slider-img1.jpg" alt="slide1")
+              .slider__slide-text-block.column.column--jc-c
+                .container
+                  h2.slider__headline.text.text--white50.text--fw200.m--b5 ZG Investment & Consulting Ltd
+                  h3.slider__title.text.text--white50.text--fw600.m--b25 We can assist You in This!
+                  p.slider__text.text.text--white16.text--fw300.m--b40 Our skilled team of experts will provide You with top business plans!
+                  .b--w230.b--media768-center
+                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="contact-us.html") Contact us
+            .slider__slide
+              picture
+                source(media="(max-width: 480px)" srcset="%=static=%img/content/slider-img2.jpg")
+                img.slider__slide-img(src="%=static=%img/content/slider-img2.jpg" alt="slide2")
+              .slider__slide-text-block.column.column--jc-c
+                .container
+                  h2.slider__headline.text.text--white50.text--fw200.m--b5 Strategic, Adaptable and
+                  h3.slider__title.text.text--white50.text--fw600.m--b25 Tenacious at What We Do!
+                  p.slider__text.text.text--white16.text--fw300.m--b40 Be sure that Your business will keep being profitable at any time!
+                  .b--w230.b--media768-center
+                    a.slider__button.button.button--fill-blueLight.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more about us
+          
+        main.page-content.page-content--home
+          .home
+            
+            a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
+              span.scroll-top-arrow
+            .home__features.p--t40
+              .container
+                h2.text.text--blueLight14.text--fw600.text--center.text--uppercase.m--b15 Welcome!
+                h3.text.text--gray50.text--center.text--fw200.text--media880-fs25 Start Improving
+                h3.text.text--gray50.text--center.text--fw600.m--b20.text--media880-fs25 Your Business Today!
+                p.text.text--grayLowLight16.text--center.text--fw300.m--b60 We are new established company, registered in Gibraltar, our goal is to match the various requirements that potential customers may have with efficient options and turn-key solutions today, in order to provide our customers with some beneficial long term possibilities for tomorrow.
+                .home__features-row-top.row.row--jc-sb.m--b40
+                  .home__features-cart.column.column--ai-c.b--w370
+                    span.home__deal-icon.m--b15
+                      != pugHelpers.Icon.call(locals, {iconName: 'deal', className: 'deal'})
+                    h2.text.text--gray16.text--fw800.text--center.m--b10 International Consultancy
+                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 We provide international consultancy services to companies worldwide
+                    .home__features-border.m--b25
+                    .b--w170
+                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
+                  .home__features-cart.column.column--ai-c.b--w370
+                    span.home__experience-icon.m--b15
+                      != pugHelpers.Icon.call(locals, {iconName: 'experience', className: 'experience'})
+                    h2.text.text--gray16.text--fw800.text--center.m--b10 Experience
+                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 Our qualified consultants can help your business grow
+                    .home__features-border.m--b25
+                    .b--w170
+                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
+                  .home__features-cart.column.column--ai-c.b--w370
+                    span.home__business-icon.m--b15
+                      != pugHelpers.Icon.call(locals, {iconName: 'business', className: 'business'})
+                    h2.text.text--gray16.text--fw800.text--center.m--b10 Business Services
+                    p.text.text--grayLight14.text--fw400.text--center.text--lh27.m--b25 We can review your business and advise on how to improve
+                    .home__features-border.m--b25
+                    .b--w170
+                      a.home__features-button.button.button--fill-grey.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more
+
+                .row.row--jc-sb.row--media1020-block
+                  .b--w355.b--media1020-w-a.column--media1020-ai-c
+                    span.home__light-icon.m--b20
+                      != pugHelpers.Icon.call(locals, {iconName: 'light', className: 'light'})
+                    h2.text.text--gray16.text--fw800.m--b10 Financial audit of your business
+                    p.text.text--grayLowLight14.text--fw400.text--lh27 We can review your business and advise on how you can improve profit and lower costs
+                  .b--w355.b--media1020-w-a.column--media1020-ai-c
+                    span.home__like-icon.m--b20
+                      != pugHelpers.Icon.call(locals, {iconName: 'like', className: 'like'})
+                    h2.text.text--gray16.text--fw800.m--b10 Unique Strategic Plans at Work
+                    p.text.text--grayLowLight14.text--fw400.text--lh27 Our staff performance measures ensure we can monitor your staff's performance to improve your companies profit
+                  .b--w355.b--media1020-w-a.column--media1020-ai-c
+                    span.home__mechanism-icon.m--b20
+                      != pugHelpers.Icon.call(locals, {iconName: 'mechanism', className: 'mechanism'})
+                    h2.text.text--gray16.text--fw800.m--b10 Excellent Quality Ensured
+                    p.text.text--grayLowLight14.text--fw400.text--lh27 Over 500 clients are satisfied with the services we provide. Our professional team has immaculate reputation in the business world.
+
+      footer.page-footer
+        .footer-content
+          .container.row.row--jc-sb.row--ai-c
+            .logo
+              a.logo__link(href="index.html")
+                .logo__img-wrap
+                  img.logo__img(src="%=static=%img/content/logo.svg")
+            .socials.socials--footer.row.row--ai-c
+              a.socials__items.socials__items--fb(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+              a.socials__items.socials__items--tw(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+              a.socials__items.socials__items--inst(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='%=static=%js/separate-js/owl.carousel.min.js')
+    script(src='%=static=%js/separate-js/noframework.waypoints.min.js')
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

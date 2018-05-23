@@ -1,0 +1,62 @@
+.main-nav
+  padding-top 5px
+  padding-right 30px
+  padding-bottom 5px
+  
+  border-right 1px solid rgba(255, 255, 255, 0.3)
+
+.main-nav__list
+  reset-list()
+  
+.main-nav__items
+  margin-right 20px
+  &:last-child
+    margin-right 0
+    
+.main-nav__item
+  transition 0.2s ease
+  &:hover
+    color blueLight
+  &--active
+    color blueLight
+    
+@media(max-width 890px)
+  .main-nav
+    flex-grow 0
+    padding-right 0
+    
+    border-right none
+  
+  .main-nav__list
+    position: fixed;
+    top: 66px;
+    left: 0;
+    bottom: 0;
+    z-index: 40;
+    
+    box-sizing: border-box;
+    visibility visible
+    display: block;
+    width: 50%;
+    padding: 20px;
+    
+    background-color: rgba(25, 25, 26, 0.8);
+    
+    transform translateX(0)
+    transition transform 0.3s linear
+    &--mobileHidden
+      opacity 0
+      
+      transform translateX(-500px)
+      transition 0.3s linear
+    
+  .main-nav__items
+    margin-right 0
+    margin-bottom 10px
+    
+  .main-nav__item
+    font-size 16px
+    
+@media(max-width 320px)
+  .main-nav__list
+    width 45%

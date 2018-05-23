@@ -1,0 +1,26 @@
+.preloader
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  z-index 100
+  
+  visibility visible
+  display flex
+  justify-content center
+  align-items center
+  margin auto
+  
+  background-color #161616
+  
+  opacity 1
+  
+  transition 1s all
+  &--hidden
+    visibility hidden
+    
+    opacity 0
+    .preloader__img-wrap
+      visibility hidden
+  

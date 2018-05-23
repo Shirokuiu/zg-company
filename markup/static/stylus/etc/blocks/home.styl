@@ -1,0 +1,141 @@
+.home__features
+  padding-bottom 90px
+  
+  background-color #f9f9f9
+
+.home__features-cart
+  box-sizing border-box
+  padding 45px 20px 50px 20px
+  
+  background-color white
+  box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.1);
+  
+  border-radius 6px
+  
+.home__deal-icon,
+.home__experience-icon,
+.home__business-icon
+  width 46px
+  height 46px
+  .deal,
+  .experience,
+  .business
+    width 46px
+    height 46px
+    
+    fill blueLight
+      
+.home__features-border
+  width 93%
+  height 1px
+  
+  background-color #e8e8e8
+  
+.home__features-button
+  transition 0.2s ease
+  &:hover
+    background-color blueLight
+  &--about
+    &:hover
+      background-color gray
+    
+.home__light-icon
+  display block
+  width 26px
+  height 46px
+  .light
+    width 26px
+    height 46px
+    
+    fill blueLight
+    
+.home__like-icon
+  display block
+  width 42px
+  height 46px
+  .like
+    width 42px
+    height 46px
+    
+    fill blueLight
+    
+.home__mechanism-icon
+  display block
+  width 49px
+  height 46px
+  .mechanism
+    width 49px
+    height 46px
+    
+    fill blueLight
+    
+.home__scroll-top
+  position fixed
+  right 30px
+  bottom 70px
+  z-index 20
+  
+  display flex
+  justify-content center
+  align-items center
+  width 44px
+  height 44px
+  
+  background-color blueLight
+  
+  border-radius 50%
+  
+  transition all 0.2s ease
+  &:hover
+    background-color gray
+  &--hidden
+    visibility hidden
+    
+    background-color transparent
+    
+    transition all 0.2s ease
+    .scroll-top-arrow
+      display none
+    
+.scroll-top-arrow
+  position relative
+  
+  display block
+  width 10px
+  height 10px
+  &::before,
+  &::after
+    position absolute
+    top 0
+    bottom 0
+    
+    content ''
+    
+    width 100%
+    height 2px
+    margin auto
+    
+    background-color white
+  &::before
+    left 3px
+    
+    transform rotate(45deg)
+  &::after
+    right 3px
+    
+    transform rotate(-45deg)
+    
+@media(max-width 1160px)
+  .home__features-cart
+    width 310px
+    
+@media(max-width 990px)
+  .home__features-row-top
+    display: block;
+    margin-bottom 30px
+    
+  .home__features-cart
+    width auto
+    margin-bottom 20px
+    &:last-child
+      margin-bottom 0

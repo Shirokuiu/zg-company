@@ -1,0 +1,74 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../components/head/head.pug
+  head
+    +head(head.about)
+  body.page
+    |%=symbols=%
+
+    .wrapper
+      .content.column
+        header.page-header#rowTop
+          .page-header__row-top.page-header__row-top--inner#rowTop
+            .container.row
+              button.hamburger.hamburger--spin(type="button")
+                span.hamburger-box
+                  span.hamburger-inner
+              .logo
+                a.logo__text.text.text--fw700(href="index.html") ZG Investment
+                  span.m--l5 & Consulting Ltd
+              nav.main-nav.grow.row.row--ai-c
+                ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="index.html") Home
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="services.html") Services
+                  li.main-nav__items
+                    a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="about.html") About
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="contact-us.html") Contact us
+              .socials.socials--header.row.row--ai-c.m--l30
+                a.socials__items.socials__items--fb(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+                a.socials__items.socials__items--tw(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+                a.socials__items.socials__items--inst(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+        main.page-content.grow.column
+        
+          .home
+            a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
+              span.scroll-top-arrow
+                
+          .about.grow.row
+            .about__content.column
+              .about__content-description
+                h2.about__content-headline.text.text--black36.text--fw700.text--right.m--b30 Who we are?
+                .row.row--jc-fe
+                  .about__content-text-wrap
+                    p.about__content-text.text.text--black20.text--right.text--lh27.m--b20 Due to extensive experience in the field of aviation and logistics, with overall more than 15 years of experience on aviation market, carrying out long-term and short-term charter contracts, and working on different aviation projects around the globe.
+                    p.about__content-text.text.text--black20.text--right.text--lh27 We have decided to establish a new company, which will focus on providing consulting services, advisory services as well as providing aviation support, for the newly created or small start-up aviation companies. Our goal is simple; We are planning to help and support young and small aviation companies, or start-up aviation companies, in order to increase their efficiency and their recognizability in the world of aviation.
+            .about__bg1
+        
+      footer.page-footer
+        .footer-content
+          .container.row.row--jc-sb.row--ai-c
+            .logo
+              a.logo__link(href="index.html")
+                .logo__img-wrap
+                  img.logo__img(src="%=static=%img/content/logo.svg")
+            .socials.socials--footer.row.row--ai-c
+              a.socials__items.socials__items--fb(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+              a.socials__items.socials__items--tw(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+              a.socials__items.socials__items--inst(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='%=static=%js/separate-js/noframework.waypoints.min.js')
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

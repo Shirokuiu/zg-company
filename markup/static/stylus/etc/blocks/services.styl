@@ -1,0 +1,95 @@
+.services__bg
+  width 53%
+  background-image url('%=static=%content/services-bg1.jpg')
+  background-repeat no-repeat
+  background-size cover
+  
+.services__description
+  box-sizing border-box
+  width 47%
+  padding-top 50px
+  padding-left 100px
+  padding-bottom 50px
+  
+  background-color #29292d
+  
+.services__description-text
+  width 460px
+  
+.services__description-list
+  reset-list()
+  
+.services__description-list-items
+  position relative
+  
+  margin-bottom 10px
+  padding-left 25px
+  &::before
+    content ''
+    
+    position absolute
+    top 7px
+    left 0
+    
+    width 8px
+    height 8px
+    
+    background-color white
+    
+    border-radius 50%
+  &:last-child
+    margin-bottom 0
+      
+@media(max-width 1440px)
+  .services__bg
+    background-image url('%=static=%content/services-bg1-notebook.jpg')
+    
+@media(max-width 1270px)
+  .services__description
+    padding-left 40px
+    
+@media(max-width 1220px)
+  .services
+    flex-direction column
+    
+  .services__bg
+    width auto
+    height 400px
+    
+    background-size 100%
+    background-position 0 -490px
+    
+  .services__description
+    flex-grow 1
+    width auto
+    padding 0 1.724137931034483%
+    padding-top 20px
+    padding-bottom 20px
+    
+  .services__description-text
+    width auto
+    
+@media(max-width 1020px)
+  .services__bg
+    background-position 0 -390px
+    
+@media(max-width 900px)
+  .services__bg
+    background-position 0 -290px
+    
+@media(max-width 790px)
+  .services__bg
+    background-position 0 -190px
+    
+@media(max-width 680px)
+  .services__bg
+    background-position 0
+    background-size cover
+    
+@media(max-width 375px)
+  .services__bg
+    background-position: -30px;
+    
+@media(max-width 320px)
+  .services__bg
+    background-position: -62px;

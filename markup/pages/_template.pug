@@ -1,0 +1,80 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../components/head/head.pug
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
+
+    .wrapper
+      .content
+        header.page-header
+          .page-header__row-top.page-header__row-top--inner#rowTop
+            .container.row
+              .logo
+                a.logo__text.text.text--fw700(href="index.html") Zg company
+              nav.main-nav.grow.row.row--ai-c
+                ul.main-nav__list.row.m--l-a
+                  li.main-nav__items
+                    a.main-nav__item.main-nav__item--active.text.text--white14.text--fw600(href="index.html") Home
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="services.html") Services
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="about.html") About
+                  li.main-nav__items
+                    a.main-nav__item.text.text--white14.text--fw600(href="contact-us.html") Contact us
+                .search
+                  button.search__button.button(type="button")
+                    span.search__icon
+                      != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
+                  .search__form.search__form--hidden
+                    .row.row--jc-c.row--ia-c.grow
+                      span.search__form-exit
+                      .column.column--jc-c
+                        .search__form-input-wrap.b--w445
+                          input.search__form-input.text.text--white30.text--fw700(type="text" name="search" placeholder="Search..." autofocus)
+                          span.search__icon.search__icon--form
+                            != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'search'})
+              .socials.row.row--ai-c.m--l30
+                a.socials__items.socials__items--fb(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+                a.socials__items.socials__items--tw(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+                a.socials__items.socials__items--inst(href="#")
+                  != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+        main.page-content
+        
+          .home
+            a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
+              span.scroll-top-arrow
+              
+          .breadcrumbs.m--b80
+            .container.row.row--jc-sb.row--ai-c
+              h2.text.text--blueLight24.text--fw800 Blog
+              .row
+                a.breadcrumbs__link.text.text--grayLowLight12.text--fw400.text--uppercase(href="index.html") Home
+                p.breadcrumbs__slash.text.text--grayLowLight12.text--fw400.text--uppercase /
+                a.breadcrumbs__link.breadcrumbs__link--active.text.text--grayLowLight12.text--fw400.text--uppercase Blog
+        
+      footer.page-footer
+        .footer-content
+          .container.row.row--jc-sb.row--ai-c
+            .logo
+              a.logo__link(href="index.html")
+                .logo__img-wrap
+                  img.logo__img(src="%=static=%img/content/logo.svg")
+            .socials.socials--footer.row.row--ai-c
+              a.socials__items.socials__items--fb(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
+              a.socials__items.socials__items--tw(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
+              a.socials__items.socials__items--inst(href="#")
+                != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='%=static=%js/separate-js/noframework.waypoints.min.js')
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

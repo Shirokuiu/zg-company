@@ -1,0 +1,34 @@
+.column
+  display flex
+  
+  column()
+  &--reverse
+    column-reverse()
+  &--jc-fs
+    column-jc-fs()
+  &--jc-fe
+    column-jc-fe()
+  &--jc-c
+    column-jc-c()
+  &--jc-sa
+    column-jc-sa()
+  &--jc-sb
+    column-jc-sb()
+  &--ai-c
+    column-ai-c()
+    
+@media(max-width 1040px)
+  .column
+    &--media1040-ai-c
+      display flex
+  
+      column()
+      column-ai-c()
+    
+@media(max-width 1020px)
+  .column
+    &--media1020-ai-c
+      display flex
+      
+      column()
+      column-ai-c()
