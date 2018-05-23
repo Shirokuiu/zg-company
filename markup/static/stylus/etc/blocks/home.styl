@@ -1,73 +1,9 @@
-.home__features
-  padding-bottom 90px
-  
-  background-color #f9f9f9
-
-.home__features-cart
-  box-sizing border-box
-  padding 45px 20px 50px 20px
-  
-  background-color white
-  box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.1);
-  
-  border-radius 6px
-  
-.home__deal-icon,
-.home__experience-icon,
-.home__business-icon
-  width 46px
-  height 46px
-  .deal,
-  .experience,
-  .business
-    width 46px
-    height 46px
-    
-    fill blueLight
-      
-.home__features-border
-  width 93%
-  height 1px
-  
-  background-color #e8e8e8
-  
-.home__features-button
-  transition 0.2s ease
-  &:hover
-    background-color blueLight
-  &--about
-    &:hover
-      background-color gray
-    
-.home__light-icon
-  display block
-  width 26px
-  height 46px
-  .light
-    width 26px
-    height 46px
-    
-    fill blueLight
-    
-.home__like-icon
-  display block
-  width 42px
-  height 46px
-  .like
-    width 42px
-    height 46px
-    
-    fill blueLight
-    
-.home__mechanism-icon
-  display block
-  width 49px
-  height 46px
-  .mechanism
-    width 49px
-    height 46px
-    
-    fill blueLight
+.home
+  &--home
+    max-width 1920px
+    margin 0 auto
+    height 100vh
+    padding-top 100px
     
 .home__scroll-top
   position fixed
@@ -125,9 +61,46 @@
     
     transform rotate(-45deg)
     
+.home__features-text-wrap
+  box-sizing border-box
+  width 50%
+  padding-top 100px
+  padding-left 1.724137931034483%
+  padding-right 1.724137931034483%
+    
+.home__features-text-title
+  font-family 'Courgette'
+  font-size 40px
+  line-height 60px
+  font-weight 700
+  
+.home__bg1
+  width 50%
+  
+  background-image url('%=static=%content/home-bg1.jpg')
+  background-repeat no-repeat
+  background-size cover
+    
 @media(max-width 1160px)
   .home__features-cart
     width 310px
+    
+@media(max-width 1030px)
+  .home
+    &--home
+      flex-direction column
+      padding-top 0
+      
+  .home__features-text-wrap
+    width auto
+    margin-bottom 30px
+    
+  .home__features-text-title
+    margin-bottom 30px
+    
+  .home__bg1
+    flex-grow 1
+    width auto
     
 @media(max-width 990px)
   .home__features-row-top
@@ -139,3 +112,36 @@
     margin-bottom 20px
     &:last-child
       margin-bottom 0
+      
+@media(max-width 768px)
+  .home__features-text-wrap
+    padding-top 50px
+  
+  .home__features-text-title
+    margin-bottom 30px !important
+    
+    font-size 30px
+    line-height 40px
+    
+  .home__features-text
+    font-size 24px
+    line-height 35px
+    
+@media(max-width 480px)
+  .home__features-text-title
+    font-size 23px
+    line-height 26px
+    
+  .home__features-text
+    font-size 20px
+    line-height 28px
+    
+@media(max-width 375px)
+  .home__features-text-wrap
+    padding-top 30px
+  
+  .home__features-text-title
+    margin-bottom 15px !important
+    
+    font-size 20px
+    
