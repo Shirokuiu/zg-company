@@ -27,7 +27,7 @@
         animateOut: 'fadeOut',
         slideTransition: 'ease',
         smartSpeed: 350,
-        autoplay: true
+        autoplay: false
       });
     });
   }

@@ -1,48 +1,18 @@
 .socials
-  &--footer,
-  &--blog
+  &--footer
     .socials__items
       &--fb,
       &--tw,
-      &--inst,
-      &--g
-        .facebook,
-        .twitter,
-        .instagram,
-        .googlePlus
-          fill grayLowLight
-  &--blog
-    .socials__items
-      display flex
-      justify-content center
-      align-items center
-      box-sizing border-box
-      width 49px
-      height 49px
-
-      border 2px solid #f6f6f6
-      border-radius 50%
-      &:hover
-        background-color #f6f6f6
+      &--inst
         .facebook,
         .twitter,
         .instagram
-          fill gray
-  &--blog-noBorder
-    .socials__items
-      width 20px
-      height 20px
-      
-      border none
-      .facebook,
-      .twitter,
-      .instagram
-        width 20px
-        height 20px
-      
-        fill #bebebf
+          fill grayLowLight
       &:hover
-        background-color transparent
+        .facebook,
+        .twitter,
+        .instagram
+          fill white
   &--about
     .socials__items
       &--fb,
@@ -108,7 +78,7 @@
     .googlePlus
       transition 0.2s ease
       &:hover
-        fill blueLight
+        fill #909090
         
 @media(max-width 890px)
   .socials
