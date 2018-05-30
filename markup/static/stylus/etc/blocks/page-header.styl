@@ -1,8 +1,7 @@
 .page-header
   position relative
   &--home
-    max-width 1920px
-    margin 0 auto
+    height 100vh
   
 .page-header__row-top
   padding 20px 0
@@ -12,10 +11,22 @@
     left 0
     right 0
     z-index 15
-
-    border-bottom 1px solid rgba(255, 255, 255, 0.3)
+    
+    background-color rgba(25, 25, 26, 0.7)
   &--inner
     background-color #19191a
+    
+.page-header__row-bottom
+  position: absolute;
+  left 0
+  right 0
+  bottom 0
+  z-index 10
+  
+  padding-top 20px
+  padding-bottom 20px
+  
+  background-color rgba(25, 25, 26, 0.7)
     
 @media(max-width 880px)
   .page-header__row-top

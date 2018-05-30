@@ -18,7 +18,7 @@ html(class="no-js", lang="ru")
                 span.hamburger-box
                   span.hamburger-inner
               .logo
-                a.logo__text.text.text--fw700(href="index.html") ZG Investment
+                a.logo__text(href="index.html") ZG Investment
                   span.m--l5 & Consulting Ltd
               nav.main-nav.grow.row.row--ai-c
                 ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
@@ -44,9 +44,9 @@ html(class="no-js", lang="ru")
                 img.slider__slide-img(src="%=static=%img/content/slider-img1.jpg" alt="slide1")
               .slider__slide-text-block.column.column--jc-c
                 .container
-                  h2.slider__headline.text.text--white50.text--fw200.m--b5 ZG Investment & Consulting Ltd
-                  h3.slider__title.text.text--white50.text--fw600.m--b25 We can assist You in This!
-                  p.slider__text.text.text--white16.text--fw300.m--b40 Our skilled team of experts will provide You with top business plans!
+                  h2.slider__headline.text.text--white50.text--fw200.m--b25 ZG Investment & Consulting Ltd
+                  h3.slider__title.text.m--b10 We can assist You in This!
+                  p.slider__text.text.text--white16.text--fw300.m--b40 Together, we create enduring change and results.
                   .b--w230.b--media768-center
                     a.slider__button.button.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="contact-us.html") Contact us
             .slider__slide
@@ -55,37 +55,39 @@ html(class="no-js", lang="ru")
                 img.slider__slide-img(src="%=static=%img/content/slider-img2.jpg" alt="slide2")
               .slider__slide-text-block.column.column--jc-c
                 .container
-                  h2.slider__headline.text.text--white50.text--fw200.m--b5 Strategic, Adaptable and
-                  h3.slider__title.text.text--white50.text--fw600.m--b25 Tenacious at What We Do!
+                  h2.slider__headline.text.text--white50.text--fw200.m--b25 ZG Investment & Consulting Ltd
+                  h3.slider__title.text.text--white50.text--fw600.m--b10 Tenacious at What We Do!
+                  p.slider__text.text.text--white16.text--fw300.m--b40 Our management consulting services focus on most critical issues and opportunities: strategy, organization, operations, aviation brokerage, aviation logistics, advanced analytics,  and sustainability across all industries and geographies. We bring deep, functional expertise in every aspect of our service.
+                  .b--w230.b--media768-center
+                    a.slider__button.button.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more about us
+            .slider__slide
+              picture
+                source(media="(max-width: 480px)" srcset="%=static=%img/content/slider-img2.jpg")
+                img.slider__slide-img(src="%=static=%img/content/slider-img3.jpg" alt="slide2")
+              .slider__slide-text-block.column.column--jc-c
+                .container
+                  h2.slider__headline.text.text--white50.text--fw200.m--b25 ZG Investment & Consulting Ltd
+                  h3.slider__title.text.text--white50.text--fw600.m--b10 Tenacious at What We Do!
                   p.slider__text.text.text--white16.text--fw300.m--b40 Be sure that Your business will keep being profitable at any time!
                   .b--w230.b--media768-center
                     a.slider__button.button.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more about us
+                    
+          .page-header__row-bottom
+            .container
+              .logo
+                a.logo__link(href="index.html")
+                  .logo__img-wrap
+                    img.logo__img(src="%=static=%img/content/logo-footer.svg")
           
         main.page-content.page-content--home
-          .home.home--home.row
-            
+        
+          .home
             a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
               span.scroll-top-arrow
-            .home__features-text-wrap
-              h2.home__features-text-title.text.text--center.text--uppercase.m--b80 ZG Investment & Consulting Ltd
-              p.home__features-text.text.text--grayLowLight30.text--fw300 We are new established company, registered in Gibraltar, our goal is to match the various requirements that potential customers may have with efficient options and turn-key solutions today, in order to provide our customers with some beneficial long term possibilities for tomorrow.
-            .home__bg1
                 
       footer.page-footer
         .footer-content
-          .container.row.row--jc-sb.row--ai-c
-            .logo
-              a.logo__link(href="index.html")
-                .logo__img-wrap
-                  img.logo__img(src="%=static=%img/content/logo-footer.svg")
-            .socials.socials--footer.row.row--ai-c
-              a.socials__items.socials__items--fb(href="#")
-                != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
-              a.socials__items.socials__items--tw(href="#")
-                != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
-              a.socials__items.socials__items--inst(href="#")
-                != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
-
+                  
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')

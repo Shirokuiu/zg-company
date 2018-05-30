@@ -2,6 +2,11 @@
   position relative
   z-index 10
   
+.slider__title
+  font-family 'Allura'
+  font-size 34px
+  color white
+  
 .owl-carousel.owl-loaded
   position relative
   z-index 10
@@ -10,7 +15,7 @@
   position absolute
   left: 0;
   right: 0;
-  bottom: 40px;
+  bottom: 10%;
 
 .owl-theme .owl-dots .owl-dot
   &:active
@@ -19,7 +24,7 @@
 .owl-theme .owl-dots .owl-dot.active
   outline none
   span
-    background-color gray
+    background-color white
     
 .slider__slide-text-block
   position absolute
@@ -28,8 +33,11 @@
   right 0
   bottom 0
   
+.owl-theme .owl-dots .owl-dot span
+  background-color #696969
+  
 .slider__button
-  background-color gray
+  background-color #696969
   
   transition 0.2s ease
   &:hover
@@ -37,10 +45,6 @@
     
 .slider__slide-img
   height 100vh
-  
-@media(min-width 2570px)
-  .slider__slide-img
-    height 50vh
     
 @media(max-width 1300px)
   .slider__slide
