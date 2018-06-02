@@ -13,7 +13,7 @@ html(class="no-js", lang="ru")
       .content
         header.page-header.page-header--home#rowTop
           .page-header__row-top.page-header__row-top--home
-            .container.row
+            .container.row.row--media890-jc-c
               button.hamburger.hamburger--spin(type="button")
                 span.hamburger-box
                   span.hamburger-inner
@@ -40,12 +40,15 @@ html(class="no-js", lang="ru")
           .slider.owl-carousel.owl-theme
             .slider__slide
               picture
-                source(media="(max-width: 1235px)" srcset="%=static=%img/content/slider-img1.jpg")
+                source(media="(max-width: 768px and min-width: 501px)" srcset="%=static=%img/content/slider-img1-tablet.jpg")
+                source(media="(max-width: 500px)" srcset="%=static=%img/content/slider-img1-mobile.jpg")
                 img.slider__slide-img(src="%=static=%img/content/slider-img1.jpg" alt="slide1")
               .slider__slide-text-block.column.column--jc-c
                 .container
-                  h2.slider__headline.text.text--white50.text--fw200.m--b30 ZG Investment & Consulting Ltd
-                  h3.slider__title.text.m--b40.m--l250 - "Together, we create enduring change and results."
+                  h2.slider__headline.text.text--white50.text--fw200.m--b30.text--media768-center ZG Investment & Consulting Ltd
+                  h3.slider__title.text.m--b40.m--l250.m--media768-l0.text--media768-center
+                    span - 
+                    | "Together, we create enduring change and results."
                   .b--w230.b--media768-center
                     a.slider__button.button.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="contact-us.html") Contact us
             .slider__slide
@@ -54,18 +57,18 @@ html(class="no-js", lang="ru")
                 img.slider__slide-img(src="%=static=%img/content/slider-img2.jpg" alt="slide2")
               .slider__slide-text-block.column.column--jc-c
                 .container
-                  h2.slider__headline.text.text--white50.text--fw200.m--b25 ZG Investment & Consulting Ltd
-                  p.slider__text.text.text--white16.text--fw300.text--lh24.m--b40.b--w480 We are new established company, registered in Gibraltar, our goal is to match the various requirements that potential customers may have with efficient options and turn-key solutions today, in order to provide our customers with some beneficial long term possibilities for tomorrow.
+                  h2.slider__headline.text.text--white50.text--fw200.m--b25.text--media768-center ZG Investment & Consulting Ltd
+                  p.slider__text.text.text--white16.text--fw300.text--lh24.m--b40.b--w480.text--media768-center.b--media768-w-a We are new established company, registered in Gibraltar, our goal is to match the various requirements that potential customers may have with efficient options and turn-key solutions today, in order to provide our customers with some beneficial long term possibilities for tomorrow.
                   .b--w230.b--media768-center
                     a.slider__button.button.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more about us
             .slider__slide
               picture
-                source(media="(max-width: 480px)" srcset="%=static=%img/content/slider-img2.jpg")
+                source(media="(max-width: 480px)" srcset="%=static=%img/content/slider-img3-mobile.jpg")
                 img.slider__slide-img(src="%=static=%img/content/slider-img3.jpg" alt="slide2")
               .slider__slide-text-block.column.column--jc-c
                 .container
-                  h2.slider__headline.text.text--white50.text--fw200.m--b25 ZG Investment & Consulting Ltd
-                  p.slider__text.text.text--white16.text--fw300.text--lh24.m--b40.b--w560 Our management consulting services focus on most critical issues and opportunities: strategy, organization, operations, aviation brokerage, aviation logistics, advanced analytics,  and sustainability across all industries and geographies. We bring deep, functional expertise in every aspect of our service.
+                  h2.slider__headline.text.text--white50.text--fw200.m--b25.text--media768-center ZG Investment & Consulting Ltd
+                  p.slider__text.text.text--white16.text--fw300.text--lh24.m--b40.b--w560.text--media768-center.b--media768-w-a Our management consulting services focus on most critical issues and opportunities: strategy, organization, operations, aviation brokerage, aviation logistics, advanced analytics,  and sustainability across all industries and geographies. We bring deep, functional expertise in every aspect of our service.
                   .b--w230.b--media768-center
                     a.slider__button.button.button--p-tb17.text.text--white13.text--fw500.text--uppercase(href="services.html") Learn more about us
                     
