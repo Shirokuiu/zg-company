@@ -46,7 +46,79 @@
     
 .slider__slide-img
   height 100vh
+  
+.slider__text
+  span
+    font-size 21px
+    line-height 25px
+    font-weight 700
     
+.slider__list-wrap
+  &--hidden
+    .slider__list
+      &--1
+        position static
+        
+        visibility visible
+        width auto
+        height auto
+        
+        opacity 1
+      &--2
+        position absolute
+
+        visibility hidden
+        width 1px
+        height 1px
+
+        opacity 0
+        
+.slider__list
+  min-height 110px !important
+  &--1
+    position absolute
+
+    visibility hidden
+    width 1px
+    height 1px
+
+    opacity 0
+
+    transition opacity 0.8s ease
+  &--2
+    transition opacity 0.8s ease
+
+.slider__list
+  reset-list()
+  
+.slider__list-items
+  font-size 16px
+  line-height 19px
+  color white
+    
+.slider__list-items
+  position relative
+  
+  margin-bottom 5px
+  padding-left 10px
+  &:last-child
+    margin-bottom 0
+  &::before
+    content ''
+    
+    position absolute
+    top 0
+    left -5px
+    bottom 0
+    
+    width 5px
+    height 5px
+    margin auto
+    
+    background-color white
+    
+    border-radius 50%
+  
 @media(max-width 1300px)
   .slider__slide
     .container

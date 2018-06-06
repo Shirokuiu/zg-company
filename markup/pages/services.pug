@@ -2,20 +2,23 @@ doctype html
 html(class="no-js", lang="ru")
   include ../components/head/head.pug
   head
-    +head(head.services)
+    +head(head.index)
   body.page
     |%=symbols=%
 
     .wrapper
-      .content.column
-        header.page-header#rowTop
-          .page-header__row-top.page-header__row-top--inner#rowTop
-            .container.row
+      .preloader
+        .preloader__img-wrap
+          img.preloader__img(src="%=static=%img/content/logo.svg")
+      .content
+        header.page-header.page-header--home#rowTop
+          .page-header__row-top.page-header__row-top--home
+            .container.row.row--media890-jc-c
               button.hamburger.hamburger--spin(type="button")
                 span.hamburger-box
                   span.hamburger-inner
               .logo
-                a.logo__text.text.text--fw700(href="index.html") ZG Investment
+                a.logo__text(href="index.html") ZG Investment
                   span.m--l5 & Consulting Ltd
               nav.main-nav.grow.row.row--ai-c
                 ul.main-nav__list.main-nav__list--mobileHidden.row.m--l-a
@@ -34,50 +37,58 @@ html(class="no-js", lang="ru")
                   != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
                 a.socials__items.socials__items--inst(href="#")
                   != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
-        main.page-content.grow.column.page-content--4k
+          .slider.owl-carousel.owl-theme
+            .slider__slide
+              picture
+                source(media="(max-width: 768px) and (min-width: 501px)" srcset="%=static=%img/content/slider-img1-services-tablet.jpg")
+                source(media="(max-width: 500px)" srcset="%=static=%img/content/slider-img1-services-mobile.jpg")
+                img.slider__slide-img(src="%=static=%img/content/slider-img1-services.jpg" alt="slide1")
+              .slider__slide-text-block.column.column--jc-c
+                .container
+                  p.slider__text.text.text--white16.text--fw300.text--lh24.m--b40.b--w670.text--media768-center.b--media768-w-a
+                    span ZG Investment & Consulting Ltd 
+                    | - combines a wealth of industry knowledge and its capabilities, due to its extensive experience in the field of aviation, and thus is ready to provide its clients with an easy, qualified, and flexible step by step solutions, creating mutually beneficial long-term relationships with its customers.
+            .slider__slide
+              picture
+                source(media="(max-width: 768px) and (min-width: 501px)" srcset="%=static=%img/content/slider-img2-services-tablet.jpg")
+                source(media="(max-width: 500px)" srcset="%=static=%img/content/slider-img2-services-mobile.jpg")
+                img.slider__slide-img(src="%=static=%img/content/slider-img2-services.jpg" alt="slide2")
+              .slider__slide-text-block.column.column--jc-c
+                .container
+                  p.slider__text.text.text--white16.text--fw300.text--lh24.m--b20.b--w770.text--media768-center.b--media768-w-a
+                    span ZG Investment & Consulting Ltd 
+                    | - provides and specializes in the following services:
+                  .slider__list-wrap.slider__list-wrap--hidden 
+                    ul.slider__list.slider__list--1
+                      li.slider__list-items Provision of support services to our customers, by providing them professional consulting, management, Advisory services;
+                      li.slider__list-items Aviation Brokerage and Logistic solutions, including assistance with spare parts and/or spare parts brokerage services;
+                      li.slider__list-items Aviation Market Research and Analysis, including studying of the current long-term and short-term contracts for the provision of aviation services;
+                    ul.slider__list.slider__list--2
+                      li.slider__list-items Research of spare parts suppliers in the field of aviation, including price and delivery time analysis;
+                      li.slider__list-items Studying of the current Aviation Trends, from the new Aircraft types, equipment, and spare parts to new specific aviation and narrow-profile aviation tasks, currently trending on the aviation market;;
+                      li.slider__list-items Innovative and tailor-made solutions to specific customer’s tasks, to maintain their personal needs in the world of business aviation;
+                      li.slider__list-items Help in solving logistic issues, which can occur during the period of operation in remote locations, away from main operation base;
+                    
+          .page-header__row-bottom
+            .container
+              .logo
+                a.logo__link(href="index.html")
+                  .logo__img-wrap
+                    img.logo__img(src="%=static=%img/content/logo-footer.svg")
+          
+        main.page-content.page-content--home
         
           .home
             a.home__scroll-top.home__scroll-top--hidden(href="#rowTop")
               span.scroll-top-arrow
-        
-          .services.grow.row
-            .services__bg    
-            .services__description
-              .services__description-text
-                h2.text.text--white30.text--fw700.m--b50 Our Services
-                p.text.m--b20.text--white18.text--lh27
-                  span.text.text--white21.text--fw700 ZG Investment & Consulting Ltd 
-                  | - combines a wealth of industry knowledge and its capabilities, due to its extensive experience in the field of aviation, and thus is ready to provide its clients with an easy, qualified, and flexible step by step solutions, creating mutually beneficial long-term relationships with its customers.
-                p.text.text--white18.m--b20.text--lh27
-                  span.text.text--white21.text--fw700 ZG Investment & Consulting Ltd 
-                  | - provides and specializes in the following services:
-                ul.services__description-list.m--b10
-                  li.services__description-list-items.text.text--white18.text--lh24 Provision of support services to our customers, by providing them professional consulting, management, Advisory services;
-                  li.services__description-list-items.text.text--white18.text--lh24 Aviation Brokerage and Logistic solutions, including assistance with spare parts and/or spare parts brokerage services;
-                  li.services__description-list-items.text.text--white18.text--lh24 Aviation Market Research and Analysis, including studying of the current long-term and short-term contracts for the provision of aviation services;
-                  li.services__description-list-items.text.text--white18.text--lh24 Research of spare parts suppliers in the field of aviation, including price and delivery time analysis;
-                ul.services__description-list
-                  li.services__description-list-items.text.text--white18.text--lh24 Studying of the current Aviation Trends, from the new Aircraft types, equipment, and spare parts to new specific aviation and narrow-profile aviation tasks, currently trending on the aviation market;
-                  li.services__description-list-items.text.text--white18.text--lh24 Innovative and tailor-made solutions to specific customer’s tasks, to maintain their personal needs in the world of business aviation;
-                  li.services__description-list-items.text.text--white18.text--lh24 Help in solving logistic issues, which can occur during the period of operation in remote locations, away from main operation base;
+                
       footer.page-footer
         .footer-content
-          .container.row.row--jc-sb.row--ai-c
-            .logo
-              a.logo__link(href="index.html")
-                .logo__img-wrap
-                  img.logo__img(src="%=static=%img/content/logo-footer.svg")
-            .socials.socials--footer.row.row--ai-c
-              a.socials__items.socials__items--fb(href="#")
-                != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'facebook'})
-              a.socials__items.socials__items--tw(href="#")
-                != pugHelpers.Icon.call(locals, {iconName: 'twitter', className: 'twitter'})
-              a.socials__items.socials__items--inst(href="#")
-                != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
-
+                  
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='%=static=%js/separate-js/owl.carousel.min.js')
     script(src='%=static=%js/separate-js/noframework.waypoints.min.js')
 
     //- Main scripts. You can replace it, but I recommend you to leave it here

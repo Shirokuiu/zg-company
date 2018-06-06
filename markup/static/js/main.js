@@ -17,6 +17,14 @@
 })();
 
 (function () {
+  var sliderListWrap = document.querySelector('.slider__list-wrap');
+  
+  setInterval(function () {
+    sliderListWrap.classList.toggle('slider__list-wrap--hidden');
+  }, 5000);
+})();
+
+(function () {
   var slider = document.querySelector('.slider');
   
   if (slider !== null) {
@@ -107,6 +115,7 @@ $(document).ready(function(){
     page.classList.toggle('page--navOpen');
   });
 })()
+
 
 /*
     This file can be used as entry point for webpack!
