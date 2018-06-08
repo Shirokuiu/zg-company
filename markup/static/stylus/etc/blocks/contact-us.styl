@@ -1,7 +1,9 @@
 .contact-us__form
   box-sizing border-box
   width 50%
-  padding 30px 2%
+  padding 100px 2%
+  
+  background-color #101010
 
 .contact-us__form-list
   reset-list()
@@ -14,7 +16,7 @@
 .contact-us__form-list-label
   display block
   
-  color: #212529;
+  color: white
   font-weight 700
   
 .contact-us__form-input
@@ -24,9 +26,9 @@
   font-size 18px
   line-height 21px
   color: #495057;
-  background-color: #fff;
+  background-color: #a9a9a9;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #495057;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   &:focus
@@ -42,29 +44,18 @@
   width 50%
   
 .contact-us__button
-  color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  background-color #696969
+
+  transition 0.2s ease
   &:hover
-    color: #fff;
-    background-color: #138496;
-    border-color: #117a8b;
-  &:focus
-    box-shadow: 0 0 0 0.2rem rgba(23,162,184,.5);
+    background-color #292929
+    
+.contact-us__img-wrap
+  width 50%
+  
+.contact-us__img
+  display block
+  height 100vh
     
 @media(max-width 960px)
   .contact-us

@@ -116,6 +116,50 @@
     background-color white
     
     border-radius 50%
+  &--no-mark
+    &::before
+      display none
+      
+.slider__slide-text-block
+  .container
+    position relative
+      
+.slider__list-dropdown-button-wrap
+  position absolute
+  left 0
+  right 0
+  bottom -40px
+  
+  align-items center
+  height 30px
+  margin auto
+  
+  cursor pointer
+    
+.slider__list-dropdown-button
+  position relative
+  
+  display block
+  width 15px
+  height 10px
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    width 60%
+    height 1px
+    
+    background-color white
+  &::before
+    left -5px
+    
+    transform rotate(45deg)
+  &::after
+    right -6px
+    
+    transform rotate(-45deg)
   
 @media(max-width 1300px)
   .slider__slide
