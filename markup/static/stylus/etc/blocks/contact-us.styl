@@ -1,6 +1,6 @@
 .contact-us__form
   box-sizing border-box
-  width 50%
+  width 80%
   padding 100px 2%
   
   background-color #101010
@@ -56,6 +56,27 @@
 .contact-us__img
   display block
   height 100vh
+  
+@media(max-width 1500px)
+  .contact-us__form
+    width 58%
+    
+@media(max-width 1200px)
+  .contact-us__form
+    width 50%
+    
+@media(max-width 1024px)
+  .contact-us
+    flex-direction column
+    height 100%
+  
+  .contact-us__form
+    flex-grow 1
+    width auto
+    padding 85px 2%
+    
+  .contact-us__img-wrap
+    display none
     
 @media(max-width 960px)
   .contact-us
@@ -69,6 +90,11 @@
     height 360px
     
 @media(max-width 470px)
+  .contact-us__form
+    display flex
+    flex-direction column
+    justify-content center
+  
   .contact-us__form-input
     &--textarea
       height 90px
