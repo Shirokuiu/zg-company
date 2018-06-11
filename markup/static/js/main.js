@@ -25,7 +25,7 @@
   if (sliderListWrap !== null) {
     var timerId = setInterval(function () {
       sliderListWrap.classList.toggle('slider__list-wrap--hidden');
-    }, 5000);
+    }, 15000);
 
     sliderListWrap.addEventListener('mouseenter', function () {
       clearInterval(timerId);
@@ -35,7 +35,7 @@
     sliderListWrap.addEventListener('mouseleave', function () {
       setInterval(function () {
         sliderListWrap.classList.toggle('slider__list-wrap--hidden');
-      }, 5000);
+      }, 15000);
     });
 
     sliderArrow.addEventListener('click', function () {
