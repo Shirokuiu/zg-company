@@ -17,12 +17,13 @@
 })();
 
 (function () {
+  var sliderServicesSlide2 = document.querySelector('.slider__slide--services2');
   var sliderListWrap = document.querySelector('.slider__list-wrap');
   var sliderArrow = document.querySelector('.slider__list-dropdown-button-wrap');
   var sliderList1 = document.querySelector('.slider__list--1');
   var sliderList2 = document.querySelector('.slider__list--2');
   
-  if (sliderListWrap !== null) {
+  if (sliderListWrap !== null && sliderArrow !== null) {
     var timerId = setInterval(function () {
       sliderListWrap.classList.toggle('slider__list-wrap--hidden');
     }, 15000);

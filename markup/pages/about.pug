@@ -38,33 +38,23 @@ html(class="no-js", lang="ru")
                 a.socials__items.socials__items--inst(href="#")
                   != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'instagram'})
           .slider.owl-carousel.owl-theme
-            .slider__slide
-              picture
-                source(media="(max-width: 1024px) and (min-width: 501px)" srcset="%=static=%img/content/slider-img1-about-tablet.jpg")
-                source(media="(max-width: 500px)" srcset="%=static=%img/content/slider-img1-about-mobile.jpg")
-                img.slider__slide-img(src="%=static=%img/content/slider-img1-about.jpg" alt="slide1")
-              .slider__slide-text-block.column.column--jc-c
+            .slider__slide.slider__slide--about1.column
+              .slider__slide-text-block.grow.column.column--jc-c
                 .container
                   h2.slider__headline.text.text--white50.text--fw200.m--b30.text--media768-center Who we are?
                   p.slider__text.text.text--white16.text--fw300.text--lh24.m--b40.b--w670.text--media768-center.b--media768-w-a Due to extensive experience in the field of aviation and logistics, with overall more than 15 years of experience on aviation market, carrying out long-term and short-term charter contracts, and working on different aviation projects around the globe.
                   p.slider__text.text.text--white16.text--fw300.text--lh24.m--b40.b--w670.text--media768-center.b--media768-w-a We have decided to establish a new company, which will focus on providing consulting services, advisory services as well as providing aviation support, for the newly created or small start-up aviation companies. Our goal is simple; We are planning to help and support young and small aviation companies, or start-up aviation companies, in order to increase their efficiency and their recognizability in the world of aviation
-            .slider__slide
-              picture
-                source(media="(max-width: 1024px) and (min-width: 501px)" srcset="%=static=%img/content/slider-img2-about-tablet.jpg")
-                source(media="(max-width: 500px)" srcset="%=static=%img/content/slider-img2-about-mobile.jpg")
-                img.slider__slide-img(src="%=static=%img/content/slider-img2-about.jpg" alt="slide2")
-              .slider__slide-text-block.column.column--jc-c
+            .slider__slide.slider__slide--about2.column
+              .slider__slide-text-block.grow.column.column--jc-c
                 .container
                   h2.slider__headline.text.text--white50.text--fw200.m--b30.text--media768-center What do we do?
                   .slider__list-wrap.slider__list-wrap--hidden 
-                    ul.slider__list.slider__list--1
+                    ul.slider__list.m--b10
                       li.slider__list-items We see things that others miss, offering you more creative solutions that combine our deep geographic experience, intimate sector knowledge and clear insights into how to create value in your business.
                       li.slider__list-items We work collaboratively, build lasting capabilities into your team and help your organization mobilize for change.
                       li.slider__list-items We define our success by your results. We care deeply about our clients. 
-                    ul.slider__list.slider__list--2
-                      li.slider__list-items.slider__list-items--no-mark We help our clients with their most complex strategic challenges and business issues. We build tailored solutions to help them achieve sustained growth and emphasize mobilization from day one. We begin by helping clients choose where to focus so they can out-execute and out-invest their competitors on the market.
-                  .slider__list-dropdown-button-wrap.row.row--jc-c.row--ai-c.hidden
-                    span.slider__list-dropdown-button
+                    ul.slider__list
+                      li.slider__list-items We help our clients with their most complex strategic challenges and business issues. We build tailored solutions to help them achieve sustained growth and emphasize mobilization from day one. We begin by helping clients choose where to focus so they can out-execute and out-invest their competitors on the market.
                     
           .page-header__row-bottom
             .container
